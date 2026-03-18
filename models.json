@@ -1,0 +1,502 @@
+{
+  "models": [
+    {
+      "id": "qwen/qwen3.5-397b-a17b",
+      "name": "Qwen3.5-397B-A17B",
+      "type": "reasoning",
+      "endpoint": "https://build.nvidia.com/qwen/qwen3.5-397b-a17b",
+      "api_base": "https://integrate.api.nvidia.com/v1",
+      "gpu": "H100",
+      "min_gpu_memory": 80
+    },
+    {
+      "id": "meta/llama-4-scout-17b-16e-instruct",
+      "name": "Llama 4 Scout 17B 16E Instruct",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/meta/llama-4-scout-17b-16e-instruct",
+      "api_base": "https://integrate.api.nvidia.com/v1",
+      "gpu": "A100",
+      "min_gpu_memory": 40
+    },
+    {
+      "id": "meta/llama-4-maverick-17b-128e-instruct",
+      "name": "Llama 4 Maverick 17B 128E Instruct",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/meta/llama-4-maverick-17b-128e-instruct",
+      "gpu": "A100",
+      "min_gpu_memory": 80
+    },
+    {
+      "id": "mistralai/mistral-large-3-675b-instruct-2512",
+      "name": "Mistral Large 3 675B Instruct 2512",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/mistralai/mistral-large-3-675b-instruct-2512",
+      "gpu": "H100",
+      "min_gpu_memory": 80
+    },
+    {
+      "id": "nvidia/cosmos-reason2-8b",
+      "name": "Cosmos Reason2 8B",
+      "type": "reasoning",
+      "endpoint": "https://build.nvidia.com/nvidia/cosmos-reason2-8b",
+      "gpu": "A10G",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-nano-8b-v1",
+      "name": "Llama 3.1 Nemotron Nano 8B v1",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/nvidia/llama-3.1-nemotron-nano-8b-v1",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-70b-instruct",
+      "name": "Llama 3.1 Nemotron 70B Instruct",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/nvidia/llama-3.1-nemotron-70b-instruct",
+      "gpu": "A100",
+      "min_gpu_memory": 80
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+      "name": "Llama 3.1 Nemotron Ultra 253B v1",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/nvidia/llama-3.1-nemotron-ultra-253b-v1",
+      "gpu": "H100",
+      "min_gpu_memory": 80
+    },
+    {
+      "id": "nvidia/llama-3.3-nemotron-super-49b-v1",
+      "name": "Llama 3.3 Nemotron Super 49B v1",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/nvidia/llama-3.3-nemotron-super-49b-v1",
+      "gpu": "A100",
+      "min_gpu_memory": 80
+    },
+    {
+      "id": "deepseek-ai/deepseek-r1-distill-llama-8b",
+      "name": "DeepSeek R1 Distill Llama 8B",
+      "type": "reasoning",
+      "endpoint": "https://build.nvidia.com/deepseek-ai/deepseek-r1-distill-llama-8b",
+      "gpu": "A10G",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "deepseek-ai/deepseek-r1-distill-qwen-7b",
+      "name": "DeepSeek R1 Distill Qwen 7B",
+      "type": "reasoning",
+      "endpoint": "https://build.nvidia.com/deepseek-ai/deepseek-r1-distill-qwen-7b",
+      "gpu": "L4",
+      "min_gpu_memory": 16
+    },
+    {
+      "id": "deepseek-ai/deepseek-r1-distill-qwen-14b",
+      "name": "DeepSeek R1 Distill Qwen 14B",
+      "type": "reasoning",
+      "endpoint": "https://build.nvidia.com/deepseek-ai/deepseek-r1-distill-qwen-14b",
+      "gpu": "A10G",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "deepseek-ai/deepseek-r1-distill-qwen-32b",
+      "name": "DeepSeek R1 Distill Qwen 32B",
+      "type": "reasoning",
+      "endpoint": "https://build.nvidia.com/deepseek-ai/deepseek-r1-distill-qwen-32b",
+      "gpu": "A100",
+      "min_gpu_memory": 40
+    },
+    {
+      "id": "google/gemma-2-2b-instruct",
+      "name": "Gemma 2 2B Instruct",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/google/gemma-2-2b-instruct",
+      "gpu": "T4",
+      "min_gpu_memory": 8
+    },
+    {
+      "id": "google/gemma-2-9b-it",
+      "name": "Gemma 2 9B IT",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/google/gemma-2-9b-it",
+      "gpu": "A10G",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "meta/llama-3.2-11b-vision-instruct",
+      "name": "Llama 3.2 11B Vision Instruct",
+      "type": "vision-language",
+      "endpoint": "https://build.nvidia.com/meta/llama-3.2-11b-vision-instruct",
+      "gpu": "A10G",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "meta/llama-3.2-90b-vision-instruct",
+      "name": "Llama 3.2 90B Vision Instruct",
+      "type": "vision-language",
+      "endpoint": "https://build.nvidia.com/meta/llama-3.2-90b-vision-instruct",
+      "gpu": "A100",
+      "min_gpu_memory": 80
+    },
+    {
+      "id": "meta/llama-3.3-70b-instruct",
+      "name": "Llama 3.3 70B Instruct",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/meta/llama-3.3-70b-instruct",
+      "gpu": "A100",
+      "min_gpu_memory": 80
+    },
+    {
+      "id": "microsoft/phi-3-mini-4k-instruct",
+      "name": "Phi-3 Mini 4K Instruct",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/microsoft/phi-3-mini-4k-instruct",
+      "gpu": "T4",
+      "min_gpu_memory": 8
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct-v0.3",
+      "name": "Mistral 7B Instruct v0.3",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/mistralai/mistral-7b-instruct-v0.3",
+      "gpu": "T4",
+      "min_gpu_memory": 16
+    },
+    {
+      "id": "mistralai/mistral-nemo-12b-instruct",
+      "name": "Mistral NeMo 12B Instruct",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/mistralai/mistral-nemo-12b-instruct",
+      "gpu": "A10G",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "mistralai/mixtral-8x7b-instruct-v0.1",
+      "name": "Mixtral 8x7B Instruct v0.1",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/mistralai/mixtral-8x7b-instruct-v0.1",
+      "gpu": "A100",
+      "min_gpu_memory": 40
+    },
+    {
+      "id": "mistralai/mixtral-8x22b-instruct-v0.1",
+      "name": "Mixtral 8x22B Instruct v0.1",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/mistralai/mixtral-8x22b-instruct-v0.1",
+      "gpu": "A100",
+      "min_gpu_memory": 80
+    },
+    {
+      "id": "nv-mistralai/mistral-nemo-minitron-8b-8k-instruct",
+      "name": "Mistral NeMo Minitron 8B 8K Instruct",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/nv-mistralai/mistral-nemo-minitron-8b-8k-instruct",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/nemotron-3-nano",
+      "name": "Nemotron 3 Nano",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/nvidia/nemotron-3-nano",
+      "gpu": "T4",
+      "min_gpu_memory": 16
+    },
+    {
+      "id": "nvidia/nvidia-nemotron-nano-9b-v2",
+      "name": "Nemotron Nano 9B v2",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/nvidia/nvidia-nemotron-nano-9b-v2",
+      "gpu": "L4",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "qwen/qwen-2.5-7b-instruct",
+      "name": "Qwen 2.5 7B Instruct",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/qwen/qwen-2.5-7b-instruct",
+      "gpu": "T4",
+      "min_gpu_memory": 16
+    },
+    {
+      "id": "qwen/qwen3-32b",
+      "name": "Qwen3 32B",
+      "type": "text-generation",
+      "endpoint": "https://build.nvidia.com/qwen/qwen3-32b",
+      "gpu": "A100",
+      "min_gpu_memory": 40
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-thinking",
+      "name": "Qwen3 Next 80B A3B Thinking",
+      "type": "reasoning",
+      "endpoint": "https://build.nvidia.com/qwen/qwen3-next-80b-a3b-thinking",
+      "gpu": "H100",
+      "min_gpu_memory": 80
+    },
+    {
+      "id": "nvidia/cosmos-predict1-7b-text2world",
+      "name": "Cosmos Predict1 7B Text2World",
+      "type": "world-model",
+      "endpoint": "https://build.nvidia.com/nvidia/cosmos-predict1-7b-text2world",
+      "gpu": "A10G",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/cosmos-predict1-7b-video2world",
+      "name": "Cosmos Predict1 7B Video2World",
+      "type": "world-model",
+      "endpoint": "https://build.nvidia.com/nvidia/cosmos-predict1-7b-video2world",
+      "gpu": "A10G",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/cuopt",
+      "name": "cuOpt",
+      "type": "optimization",
+      "endpoint": "https://build.nvidia.com/nvidia/cuopt",
+      "gpu": "A10G",
+      "min_gpu_memory": 16
+    },
+    {
+      "id": "nvidia/genmol",
+      "name": "GenMol",
+      "type": "molecular-generation",
+      "endpoint": "https://build.nvidia.com/nvidia/genmol",
+      "gpu": "A10G",
+      "min_gpu_memory": 16
+    },
+    {
+      "id": "nvidia/arctic-embed-l",
+      "name": "Arctic Embed L",
+      "type": "embedding",
+      "endpoint": "https://build.nvidia.com/nvidia/arctic-embed-l",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-nano-vl-8b-v1",
+      "name": "Llama 3.1 Nemotron Nano VL 8B v1",
+      "type": "vision-language",
+      "endpoint": "https://build.nvidia.com/nvidia/llama-3.1-nemotron-nano-vl-8b-v1",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/llama-3.2-nv-embedqa-1b-v2",
+      "name": "Llama 3.2 NV-EmbedQA 1B v2",
+      "type": "embedding",
+      "endpoint": "https://build.nvidia.com/nvidia/llama-3.2-nv-embedqa-1b-v2",
+      "gpu": "T4",
+      "min_gpu_memory": 8
+    },
+    {
+      "id": "nvidia/nv-embedqa-e5-v5",
+      "name": "NV-EmbedQA E5 v5",
+      "type": "embedding",
+      "endpoint": "https://build.nvidia.com/nvidia/nv-embedqa-e5-v5",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/nv-embedqa-mistral-7b-v2",
+      "name": "NV-EmbedQA Mistral 7B v2",
+      "type": "embedding",
+      "endpoint": "https://build.nvidia.com/nvidia/nv-embedqa-mistral-7b-v2",
+      "gpu": "A10G",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/nv-rerankqa-mistral-4b-v3",
+      "name": "NV-RerankQA Mistral 4B v3",
+      "type": "reranking",
+      "endpoint": "https://build.nvidia.com/nvidia/nv-rerankqa-mistral-4b-v3",
+      "gpu": "L4",
+      "min_gpu_memory": 16
+    },
+    {
+      "id": "nvidia/nvclip",
+      "name": "NVCLIP",
+      "type": "vision",
+      "endpoint": "https://build.nvidia.com/nvidia/nvclip",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/llama-3.2-nv-rerankqa-1b-v2",
+      "name": "Llama 3.2 NV-RerankQA 1B v2",
+      "type": "reranking",
+      "endpoint": "https://build.nvidia.com/nvidia/llama-3.2-nv-rerankqa-1b-v2",
+      "gpu": "T4",
+      "min_gpu_memory": 8
+    },
+    {
+      "id": "nvidia/nemoretriever-graphic-elements-v1",
+      "name": "NeMo Retriever Graphic Elements v1",
+      "type": "retrieval",
+      "endpoint": "https://build.nvidia.com/nvidia/nemoretriever-graphic-elements-v1",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/nemoretriever-page-elements-v2",
+      "name": "NeMo Retriever Page Elements v2",
+      "type": "retrieval",
+      "endpoint": "https://build.nvidia.com/nvidia/nemoretriever-page-elements-v2",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/nemoretriever-parse",
+      "name": "NeMo Retriever Parse",
+      "type": "retrieval",
+      "endpoint": "https://build.nvidia.com/nvidia/nemoretriever-parse",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/nemoretriever-table-structure-v1",
+      "name": "NeMo Retriever Table Structure v1",
+      "type": "retrieval",
+      "endpoint": "https://build.nvidia.com/nvidia/nemoretriever-table-structure-v1",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "bigcode/starcoder2-7b",
+      "name": "StarCoder2 7B",
+      "type": "code-generation",
+      "endpoint": "https://build.nvidia.com/bigcode/starcoder2-7b",
+      "gpu": "A10G",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/ai-generated-image-detection",
+      "name": "AI Generated Image Detection",
+      "type": "vision",
+      "endpoint": "https://build.nvidia.com/nvidia/ai-generated-image-detection",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/alphafold2",
+      "name": "AlphaFold2",
+      "type": "biology",
+      "endpoint": "https://build.nvidia.com/nvidia/alphafold2",
+      "gpu": "A100",
+      "min_gpu_memory": 80
+    },
+    {
+      "id": "nvidia/corrdiff",
+      "name": "CorrDiff",
+      "type": "diffusion",
+      "endpoint": "https://build.nvidia.com/nvidia/corrdiff",
+      "gpu": "A100",
+      "min_gpu_memory": 80
+    },
+    {
+      "id": "nvidia/deepfake-image-detection",
+      "name": "Deepfake Image Detection",
+      "type": "vision",
+      "endpoint": "https://build.nvidia.com/nvidia/deepfake-image-detection",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/diffdock",
+      "name": "DiffDock",
+      "type": "biology",
+      "endpoint": "https://build.nvidia.com/nvidia/diffdock",
+      "gpu": "A10G",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/evo2-40b",
+      "name": "Evo2 40B",
+      "type": "biology",
+      "endpoint": "https://build.nvidia.com/nvidia/evo2-40b",
+      "gpu": "H100",
+      "min_gpu_memory": 80
+    },
+    {
+      "id": "nvidia/fourcastnet",
+      "name": "FourCastNet",
+      "type": "weather",
+      "endpoint": "https://build.nvidia.com/nvidia/fourcastnet",
+      "gpu": "A100",
+      "min_gpu_memory": 40
+    },
+    {
+      "id": "nvidia/maisi",
+      "name": "MAISI",
+      "type": "medical",
+      "endpoint": "https://build.nvidia.com/nvidia/maisi",
+      "gpu": "A100",
+      "min_gpu_memory": 80
+    },
+    {
+      "id": "nvidia/molmim",
+      "name": "MolMIM",
+      "type": "biology",
+      "endpoint": "https://build.nvidia.com/nvidia/molmim",
+      "gpu": "A10G",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/nemoguard-jailbreak-detect",
+      "name": "NeMo Guard Jailbreak Detect",
+      "type": "security",
+      "endpoint": "https://build.nvidia.com/nvidia/nemoguard-jailbreak-detect",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/nv-yolox-page-elements-v1",
+      "name": "NV YOLOX Page Elements v1",
+      "type": "vision",
+      "endpoint": "https://build.nvidia.com/nvidia/nv-yolox-page-elements-v1",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/paddleocr",
+      "name": "PaddleOCR",
+      "type": "ocr",
+      "endpoint": "https://build.nvidia.com/nvidia/paddleocr",
+      "gpu": "T4",
+      "min_gpu_memory": 16
+    },
+    {
+      "id": "nvidia/phind-codellama-34b-v2-instruct",
+      "name": "Phind CodeLlama 34B v2 Instruct",
+      "type": "code-generation",
+      "endpoint": "https://build.nvidia.com/nvidia/phind-codellama-34b-v2-instruct",
+      "gpu": "A100",
+      "min_gpu_memory": 40
+    },
+    {
+      "id": "nvidia/proteinmpnn",
+      "name": "ProteinMPNN",
+      "type": "biology",
+      "endpoint": "https://build.nvidia.com/nvidia/proteinmpnn",
+      "gpu": "A10G",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/llama-3.1-nemoguard-8b-content-safety",
+      "name": "Llama 3.1 NeMoGuard 8B Content Safety",
+      "type": "security",
+      "endpoint": "https://build.nvidia.com/nvidia/llama-3.1-nemoguard-8b-content-safety",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    },
+    {
+      "id": "nvidia/llama-3.1-nemoguard-8b-topic-control",
+      "name": "Llama 3.1 NeMoGuard 8B Topic Control",
+      "type": "security",
+      "endpoint": "https://build.nvidia.com/nvidia/llama-3.1-nemoguard-8b-topic-control",
+      "gpu": "L40S",
+      "min_gpu_memory": 24
+    }
+  ]
+}
