@@ -1,0 +1,23 @@
+# 1. 安装依赖
+pip install -r requirements.txt
+
+# 2. 初始化数据库
+python main.py --action list
+
+# 3. 创建新密钥
+python main.py --action create --count 5
+
+# 4. 轮换过期密钥
+python main.py --action rotate --all --days 3
+
+# 5. 监控密钥状态
+python main.py --action monitor --interval 3600 --auto-rotate
+
+# 6. 自动运行模式
+python main.py --action auto --min-keys 20 --interval 7200
+
+# 7. 测试特定模型
+python main.py --action test --model "qwen/qwen3.5-397b-a17b"
+
+# 8. 列出所有密钥
+python main.py --action list --detail
