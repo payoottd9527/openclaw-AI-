@@ -1,0 +1,32 @@
+nim_key_rotator/
+│
+├── main.py                 # 主程序入口
+├── config.py               # 配置文件
+├── models.json             # 188个模型列表
+├── requirements.txt        # 依赖包
+│
+├── core/
+│   ├── __init__.py
+│   ├── browser_manager.py   # 比特浏览器管理（复用之前的）
+│   ├── pool_manager.py      # 虚拟号码/邮箱池（复用之前的）
+│   ├── key_manager.py       # 密钥管理器
+│   └── nim_client.py        # NVIDIA NIM API客户端
+│
+├── providers/
+│   ├── __init__.py
+│   ├── nvidia/
+│   │   ├── __init__.py
+│   │   ├── account_creator.py  # NVIDIA账号注册
+│   │   ├── key_rotator.py      # 密钥轮换
+│   │   └── model_selector.py   # 模型选择器
+│   └── captcha/                 # 验证码处理
+│       └── solver.py
+│
+├── data/
+│   ├── keys.db              # 密钥数据库
+│   ├── accounts.db          # 账号数据库
+│   └── profiles/            # 浏览器配置文件
+│
+└── scripts/
+    ├── rotate_all.py        # 批量轮换脚本
+    └── monitor.py           # 密钥监控
